@@ -22,7 +22,7 @@ region=${4}
 if [ -z "$5" ]; then
   nodetype=${5}
 else
-  nodetype="secure"
+  nodetype="super"
 fi
 
 testnet=0
@@ -139,21 +139,21 @@ cat << EOF > /mnt/zen/secnode/config.json
   "nodetype": "$nodetype",
   "nodeid": null,
   "servers": [
-   "ts2.eu",
-   "ts1.eu",
-   "ts3.eu",
-   "ts4.eu",
-   "ts4.na",
-   "ts3.na",
-   "ts2.na",
-   "ts1.na"
+   "xns2.eu",
+   "xns1.eu",
+   "xns3.eu",
+   "xns4.eu",
+   "xns4.na",
+   "xns3.na",
+   "xns2.na",
+   "xns1.na"
   ],
   "stakeaddr": "$stakeaddr",
   "email": "$email",
   "fqdn": "$fqdn",
   "ipv": "4",
   "region": "$region",
-  "home": "ts1.$region",
+  "home": "xns1.$region",
   "category": "none"
  }
 }
